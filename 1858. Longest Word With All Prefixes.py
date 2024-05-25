@@ -39,6 +39,6 @@ def completeString(n: int, a: List[str])-> str:
         if trie.all_prefix_exits(word):
             if len(word) > len(longest_prefix):
                 longest_prefix = word
-            elif len(word) == len(longest_prefix) and word < longest_prefix:
+            elif len(word) == len(longest_prefix) and word < longest_prefix: # If equal then check lexicography
                 longest_prefix = word
     return longest_prefix if longest_prefix else "None"
